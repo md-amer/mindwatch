@@ -1,8 +1,80 @@
-[
-  {
-    "timestamp": "2026-03-14T22:46:34.000Z",
-    "entities": "financial custodians",
-    "topic": "cyberattack",
-    "eventSummary": "Reports indicate that Iranian hackers have allegedly threatened to target U.S. financial data, specifically claiming intent to wipe debt and credit score records. This threat surfaces amidst a broader context of Iran-linked cyber activities targeting various international entities.\nSources:\n- https://twitter.com/4874513699/status/2032951549131936079\n- https://twitter.com/41258937/status/2032842690014896623"
-  }
-]
+{
+  "weeks": [
+    {
+      "week": "2026-03-10 — 2026-03-17",
+      "alerts": [
+        {
+          "claim": "Social media is making an entire generation mentally ill — teens are all depressed because of their phones",
+          "verdict": "MISLEADING",
+          "harmLevel": "HIGH",
+          "category": "Pop psychology",
+          "evidence": "Research on social media types and adolescent mental health (PMID: 41836908) found that the relationship between social media use and mental health is far more nuanced than blanket claims suggest. Different types of social media use (passive scrolling vs. active engagement) have different effects, and individual factors play a significant moderating role.",
+          "betterUnderstanding": "While excessive passive social media use correlates with poorer mental health outcomes in some adolescents, the relationship is complex and depends on usage patterns, individual vulnerability, and type of engagement. Active, social use can even be beneficial.",
+          "sources": ["https://pubmed.ncbi.nlm.nih.gov/41836908/"],
+          "timestamp": "2026-03-17T12:00:00Z"
+        },
+        {
+          "claim": "You can accurately diagnose yourself with ADHD/autism/BPD from TikTok videos — psychiatrists just gatekeep diagnoses",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Self-diagnosis",
+          "evidence": "Research on combating misinformation in child and adolescent mental health (PMID: 41813096) highlights the dangers of self-diagnosis from social media content. Clinical diagnosis requires structured assessment, developmental history, and differential diagnosis that cannot be replicated through short-form video content. Misdiagnosis can lead to inappropriate treatment-seeking or avoidance of needed care.",
+          "betterUnderstanding": "While recognizing symptoms in yourself is a valid starting point, clinical diagnosis requires professional assessment because many symptoms overlap across conditions. Self-diagnosis from social media risks confirmation bias and can delay appropriate treatment.",
+          "sources": ["https://pubmed.ncbi.nlm.nih.gov/41813096/"],
+          "timestamp": "2026-03-17T12:00:00Z"
+        },
+        {
+          "claim": "Eating disorder recovery content on social media is always helpful and supportive",
+          "verdict": "LACKS CONTEXT",
+          "harmLevel": "HIGH",
+          "category": "Therapy misconceptions",
+          "evidence": "A study examining eating disorder stories on social media (PMID: 41814389) found that while recovery narratives can be inspiring, they often lack clinical nuance, may inadvertently share triggering details about specific behaviors, and can create unrealistic expectations about recovery timelines. The line between helpful sharing and harmful content is often blurred.",
+          "betterUnderstanding": "Recovery content on social media is a mixed bag — some is genuinely supportive, but much of it can be triggering or medically inaccurate. People in recovery should prioritize professional guidance over social media narratives.",
+          "sources": ["https://pubmed.ncbi.nlm.nih.gov/41814389/"],
+          "timestamp": "2026-03-17T12:00:00Z"
+        },
+        {
+          "claim": "Antidepressants are just placebos pushed by Big Pharma — you don't need medication, just exercise and think positive",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Medication myths",
+          "evidence": "Research on digital media mental health messaging (PMID: 41805920) documents how anti-medication misinformation spreads through social media, discouraging people from evidence-based treatments. Multiple meta-analyses consistently show antidepressants are significantly more effective than placebo for moderate-to-severe depression, though they are not the only treatment option.",
+          "betterUnderstanding": "Antidepressants are evidence-based treatments for moderate-to-severe depression with well-documented efficacy. Exercise and lifestyle changes are valuable complementary approaches, but they are not substitutes for medication when clinically indicated.",
+          "sources": ["https://pubmed.ncbi.nlm.nih.gov/41805920/"],
+          "timestamp": "2026-03-17T12:00:00Z"
+        },
+        {
+          "claim": "Trauma responses mean you definitely have PTSD — if you avoid things that remind you of bad experiences, you're traumatized",
+          "verdict": "PARTIALLY TRUE",
+          "harmLevel": "MODERATE",
+          "category": "Pop psychology",
+          "evidence": "Research from PubMed (PMID: 41835877) on psychological response patterns shows that avoidance behaviors exist on a spectrum. While avoidance is one criterion for PTSD, it is also a normal human response to unpleasant experiences. Clinical PTSD requires meeting multiple specific criteria for duration, severity, and functional impairment.",
+          "betterUnderstanding": "Avoidance of reminders of negative experiences is a normal human behavior. PTSD is a specific clinical diagnosis requiring multiple symptoms persisting for over a month that significantly impair daily functioning. Not all stress responses are trauma disorders.",
+          "sources": ["https://pubmed.ncbi.nlm.nih.gov/41835877/"],
+          "timestamp": "2026-03-17T12:00:00Z"
+        },
+        {
+          "claim": "Toxic positivity culture says you should always stay positive — negative emotions are a sign of weakness",
+          "verdict": "FALSE",
+          "harmLevel": "MODERATE",
+          "category": "Toxic positivity",
+          "evidence": "Research on mental health stigma and misinformation (PMID: 41818186) discusses how toxic positivity narratives discourage help-seeking by framing normal emotional distress as personal failure. Evidence-based approaches like ACT (Acceptance and Commitment Therapy) emphasize that accepting difficult emotions rather than suppressing them leads to better psychological outcomes.",
+          "betterUnderstanding": "All emotions serve adaptive functions. Suppressing negative emotions increases physiological stress and worsens mental health. Psychological flexibility — the ability to experience and accept a full range of emotions — is a stronger predictor of wellbeing than forced positivity.",
+          "sources": ["https://pubmed.ncbi.nlm.nih.gov/41818186/"],
+          "timestamp": "2026-03-17T12:00:00Z"
+        },
+        {
+          "claim": "Mental health issues in developing countries aren't real — it's a Western cultural phenomenon",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Stigma reinforcement",
+          "evidence": "Research on digital media and mental health messaging in Sub-Saharan Africa (PMID: 41805920) directly addresses this misconception, documenting the significant mental health burden in developing regions and the role of digital media in both spreading misinformation and providing access to mental health information in resource-limited settings.",
+          "betterUnderstanding": "Mental health conditions are documented across all cultures and regions. What differs is cultural expression, available resources, and stigma levels. The WHO estimates that mental health conditions affect people in every country regardless of economic development.",
+          "sources": ["https://pubmed.ncbi.nlm.nih.gov/41805920/"],
+          "timestamp": "2026-03-17T12:00:00Z"
+        }
+      ]
+    }
+  ],
+  "lastUpdated": "2026-03-17T12:00:00Z"
+}

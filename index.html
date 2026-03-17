@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindWatch — Mental Health Misinformation Tracker</title>
+  <meta name="description" content="AI-powered mental health misinformation intelligence tracker. Evidence-based verdicts from PubMed research, analyzed by GitHub Models.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MindWatch — Mental Health Misinformation Tracker">
+  <meta property="og:description" content="AI-powered mental health misinformation intelligence tracker. Evidence-based verdicts from PubMed research.">
+  <meta property="og:url" content="https://md-amer.github.io/mindwatch">
+  <meta property="og:site_name" content="MindWatch">
+  <meta property="og:image" content="https://md-amer.github.io/mindwatch/og-image.png">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@mindwatch_ai">
+  <meta name="twitter:title" content="MindWatch — Mental Health Misinformation Tracker">
+  <meta name="twitter:description" content="AI-powered mental health misinformation intelligence tracker. Evidence from PubMed research.">
+  <meta name="twitter:image" content="https://md-amer.github.io/mindwatch/og-image.png">
+
+  <!-- 🌰 MindWatch — Mental Health Misinformation Intelligence Tracker 🌰 -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F330;</text></svg>">
+
+  <style>
+    /* ========================================
+       DESIGN TOKENS
+       ======================================== */
+    :root {
+      --bg-primary: #0c0f1a;
+      --bg-secondary: #111627;
+      --bg-card: #161b2e;
+      --bg-card-hover: #1a2038;
+      --bg-input: #1e2440;
+
+      --border-default: #232a45;
+      --border-subtle: #1c2238;
+      --border-accent: #3a4470;
+
+      --text-primary: #e8eaf0;
+      --text-secondary: #9ca3bf;
+      --text-muted: #6b7394;
+
+      --accent-blue: #5b8def;
+      --accent-purple: #8b6fcf;
+      --accent-teal: #4ecdc4;
+
+      --verdict-false: #e74c5e;
+      --verdict-false-bg: rgba(231, 76, 94, 0.12);
+      --verdict-misleading: #e8954a;
+      --verdict-misleading-bg: rgba(232, 149, 74, 0.12);
+      --verdict-lacks-context: #4ecdc4;
+      --verdict-lacks-context-bg: rgba(78, 205, 196, 0.12);
+      --verdict-partial: #5bb978;
+      --verdict-partial-bg: rgba(91, 185, 120, 0.12);
+
+      --harm-high: #e74c5e;
+      --harm-high-bg: rgba(231, 76, 94, 0.08);
+      --harm-moderate: #e8954a;
+      --harm-moderate-bg: rgba(232, 149, 74, 0.08);
+      --harm-low: #5bb978;
+      --harm-low-bg: rgba(91, 185, 120, 0.08);
+
+      --category-bg: rgba(139, 111, 207, 0.14);
+      --category-color: #b49ae0;
+
+      --better-border: #2d6b4f;
+      --better-bg: rgba(45, 107, 79, 0.08);
+
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+
+      --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.25);
+      --shadow-card-hover: 0 4px 20px rgba(0, 0, 0, 0.35);
+
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      --font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+
+      --transition: 0.2s ease;
+    }
+
+    /* ========================================
+       RESET & BASE
+       ======================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a {
+      color: var(--accent-blue);
+      text-decoration: none;
+      transition: color var(--transition);
+    }
+
+    a:hover {
+      color: var(--accent-teal);
+      text-decoration: underline;
+    }
+
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid var(--accent-blue);
+      outline-offset: 2px;
+    }
+
+    /* ========================================
+       LAYOUT
+       ======================================== */
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ========================================
+       HEADER
+       ======================================== */
+    .header {
+      padding: 40px 0 24px;
+      border-bottom: 1px solid var(--border-default);
+    }
+
+    .header__title {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .header__subtitle {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      font-weight: 400;
+      line-height: 1.5;
+      max-width: 600px;
+    }
+
+    .header__meta {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 18px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    .header__meta-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent-teal);
+      display: inline-block;
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    /* ========================================
+       STATS BAR
+       ======================================== */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      padding: 24px 0;
+    }
+
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-default);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      text-align: center;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+
+    .stat-card:hover {
+      border-color: var(--border-accent);
+      box-shadow: var(--shadow-card);
+    }
+
+    .stat-card__value {
+      font-size: 1.75rem;
+      font-weight: 700;
+      font-family: var(--font-mono);
+      line-height: 1.2;
+    }
+
+    .stat-card__value--claims { color: var(--accent-blue); }
+    .stat-card__value--harm { color: var(--verdict-false); }
+    .stat-card__value--false { color: var(--verdict-misleading); }
+    .stat-card__value--categories { color: var(--accent-purple); }
+
+    .stat-card__label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-top: 4px;
+    }
+
+    /* ========================================
+       WEEK NAVIGATION
+       ======================================== */
+    .week-nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border-subtle);
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .week-nav__label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-right: 4px;
+      flex-shrink: 0;
+    }
+
+    .week-btn {
+      background: var(--bg-input);
+      border: 1px solid var(--border-default);
+      border-radius: var(--radius-sm);
+      color: var(--text-secondary);
+      font-size: 0.82rem;
+      font-family: var(--font-sans);
+      padding: 7px 14px;
+      cursor: pointer;
+      transition: all var(--transition);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .week-btn:hover {
+      background: var(--bg-card-hover);
+      color: var(--text-primary);
+      border-color: var(--border-accent);
+    }
+
+    .week-btn--active {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+    }
+
+    .week-btn--active:hover {
+      background: #4a7de0;
+      color: #fff;
+    }
+
+    .week-nav__range {
+      margin-left: auto;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      flex-shrink: 0;
+    }
+
+    /* ========================================
+       ALERT CARDS
+       ======================================== */
+    .alerts {
+      padding: 20px 0 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .alerts__heading {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding-bottom: 4px;
+    }
+
+    .alert-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-default);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      transition: border-color var(--transition), box-shadow var(--transition);
+      position: relative;
+    }
+
+    .alert-card:hover {
+      border-color: var(--border-accent);
+      box-shadow: var(--shadow-card-hover);
+    }
+
+    .alert-card--high {
+      border-left: 3px solid var(--harm-high);
+    }
+
+    .alert-card--moderate {
+      border-left: 3px solid var(--harm-moderate);
+    }
+
+    .alert-card--low {
+      border-left: 3px solid var(--harm-low);
+    }
+
+    /* Badges row */
+    .alert-card__badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 10px;
+      border-radius: 4px;
+      line-height: 1.3;
+    }
+
+    .badge--false {
+      background: var(--verdict-false-bg);
+      color: var(--verdict-false);
+      border: 1px solid rgba(231, 76, 94, 0.25);
+    }
+
+    .badge--misleading {
+      background: var(--verdict-misleading-bg);
+      color: var(--verdict-misleading);
+      border: 1px solid rgba(232, 149, 74, 0.25);
+    }
+
+    .badge--lacks-context {
+      background: var(--verdict-lacks-context-bg);
+      color: var(--verdict-lacks-context);
+      border: 1px solid rgba(78, 205, 196, 0.25);
+    }
+
+    .badge--partially-true {
+      background: var(--verdict-partial-bg);
+      color: var(--verdict-partial);
+      border: 1px solid rgba(91, 185, 120, 0.25);
+    }
+
+    .badge--harm-high {
+      background: var(--harm-high-bg);
+      color: var(--harm-high);
+      border: 1px solid rgba(231, 76, 94, 0.2);
+    }
+
+    .badge--harm-moderate {
+      background: var(--harm-moderate-bg);
+      color: var(--harm-moderate);
+      border: 1px solid rgba(232, 149, 74, 0.2);
+    }
+
+    .badge--harm-low {
+      background: var(--harm-low-bg);
+      color: var(--harm-low);
+      border: 1px solid rgba(91, 185, 120, 0.2);
+    }
+
+    .badge--category {
+      background: var(--category-bg);
+      color: var(--category-color);
+      border: 1px solid rgba(139, 111, 207, 0.2);
+    }
+
+    /* Claim */
+    .alert-card__claim {
+      font-size: 1.1rem;
+      font-weight: 600;
+      line-height: 1.45;
+      color: var(--text-primary);
+      margin-bottom: 18px;
+      font-style: italic;
+    }
+
+    .alert-card__claim::before {
+      content: "\201C";
+      color: var(--text-muted);
+    }
+
+    .alert-card__claim::after {
+      content: "\201D";
+      color: var(--text-muted);
+    }
+
+    /* Evidence section */
+    .alert-card__section-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .alert-card__evidence {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+
+    /* Better understanding box */
+    .alert-card__better {
+      background: var(--better-bg);
+      border: 1px solid var(--better-border);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    .alert-card__better-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--verdict-partial);
+      margin-bottom: 6px;
+    }
+
+    .alert-card__better-text {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Sources */
+    .alert-card__sources {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .source-link {
+      font-size: 0.78rem;
+      font-family: var(--font-mono);
+      background: var(--bg-input);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-default);
+      color: var(--accent-blue);
+      transition: all var(--transition);
+    }
+
+    .source-link:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--accent-blue);
+      text-decoration: none;
+    }
+
+    /* Footer of card */
+    .alert-card__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .alert-card__timestamp {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    .share-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--bg-input);
+      border: 1px solid var(--border-default);
+      border-radius: var(--radius-sm);
+      color: var(--text-secondary);
+      font-size: 0.78rem;
+      font-family: var(--font-sans);
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+
+    .share-btn:hover {
+      background: var(--bg-card-hover);
+      color: var(--text-primary);
+      border-color: var(--border-accent);
+    }
+
+    .share-btn svg {
+      width: 14px;
+      height: 14px;
+      fill: currentColor;
+    }
+
+    /* ========================================
+       EMPTY / LOADING STATES
+       ======================================== */
+    .state-message {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-muted);
+    }
+
+    .state-message__icon {
+      font-size: 2.5rem;
+      margin-bottom: 12px;
+      opacity: 0.6;
+    }
+
+    .state-message__title {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      margin-bottom: 6px;
+    }
+
+    .state-message__text {
+      font-size: 0.88rem;
+      max-width: 400px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+
+    .loading-spinner {
+      width: 32px;
+      height: 32px;
+      border: 3px solid var(--border-default);
+      border-top-color: var(--accent-blue);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 0 auto 16px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* ========================================
+       FOOTER
+       ======================================== */
+    .footer {
+      border-top: 1px solid var(--border-default);
+      padding: 32px 0;
+      text-align: center;
+    }
+
+    .footer__author {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      margin-bottom: 10px;
+    }
+
+    .footer__credits {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+
+    .footer__links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: 0.82rem;
+    }
+
+    /* ========================================
+       RESPONSIVE
+       ======================================== */
+    @media (max-width: 640px) {
+      .header {
+        padding: 28px 0 20px;
+      }
+
+      .header__title {
+        font-size: 1.6rem;
+      }
+
+      .header__subtitle {
+        font-size: 0.9rem;
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+
+      .stat-card {
+        padding: 12px;
+      }
+
+      .stat-card__value {
+        font-size: 1.4rem;
+      }
+
+      .week-nav__range {
+        display: none;
+      }
+
+      .alert-card {
+        padding: 18px;
+      }
+
+      .alert-card__claim {
+        font-size: 1rem;
+      }
+
+      .alert-card__footer {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .container {
+        padding: 0 14px;
+      }
+
+      .stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+
+      .week-btn {
+        padding: 6px 10px;
+        font-size: 0.76rem;
+      }
+    }
+
+    /* ========================================
+       SKIP LINK (a11y)
+       ======================================== */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 0;
+      background: var(--accent-blue);
+      color: #fff;
+      padding: 8px 16px;
+      z-index: 100;
+      font-size: 0.9rem;
+      border-radius: 0 0 var(--radius-sm) 0;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#alerts">Skip to alerts</a>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <h1 class="header__title">&#x1F330; MindWatch</h1>
+      <p class="header__subtitle">AI-powered mental health misinformation tracker. Evidence from PubMed research, analyzed by GitHub Models.</p>
+      <div class="header__meta">
+        <span><span class="header__meta-dot" aria-hidden="true"></span> Auto-refreshes every 5 min</span>
+        <span id="lastUpdated">Last updated: --</span>
+        <span>Data: PubMed + GitHub Models</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- STATS BAR -->
+  <section class="container" aria-label="Statistics summary">
+    <div class="stats">
+      <div class="stat-card">
+        <div class="stat-card__value stat-card__value--claims" id="statTotal">--</div>
+        <div class="stat-card__label">Total Claims</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card__value stat-card__value--harm" id="statHigh">--</div>
+        <div class="stat-card__label">High Harm</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card__value stat-card__value--false" id="statFalse">--</div>
+        <div class="stat-card__label">Fully False</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card__value stat-card__value--categories" id="statCategories">--</div>
+        <div class="stat-card__label">Categories</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WEEK NAVIGATION -->
+  <nav class="container" aria-label="Week selection">
+    <div class="week-nav" id="weekNav">
+      <span class="week-nav__label">Week:</span>
+      <!-- Buttons injected by JS -->
+      <span class="week-nav__range" id="weekRange">--</span>
+    </div>
+  </nav>
+
+  <!-- ALERTS -->
+  <main class="container" id="alerts">
+    <div class="alerts" id="alertsContainer">
+      <div class="state-message" id="loadingState">
+        <div class="loading-spinner"></div>
+        <div class="state-message__title">Loading intelligence data...</div>
+        <div class="state-message__text">Fetching the latest mental health misinformation alerts.</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__author">Built by Mohammed Amer -- MSc Psychology &#x1F330;</div>
+      <div class="footer__credits">
+        Evidence sourced from <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer">PubMed</a> |
+        Analysis by <a href="https://github.com/marketplace/models" target="_blank" rel="noopener noreferrer">GitHub Models</a>
+      </div>
+      <div class="footer__links">
+        <a href="https://github.com/md-amer/mindwatch" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://x.com/mindwatch_ai" target="_blank" rel="noopener noreferrer">@mindwatch_ai</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+
+      /* ---- Config ---- */
+      var DATA_URL = 'data/events.json';
+      var REFRESH_MS = 5 * 60 * 1000;
+
+      /* ---- State ---- */
+      var appData = null;
+      var selectedWeekIdx = 0;
+
+      /* ---- DOM refs ---- */
+      var $alertsContainer = document.getElementById('alertsContainer');
+      var $weekNav = document.getElementById('weekNav');
+      var $weekRange = document.getElementById('weekRange');
+      var $lastUpdated = document.getElementById('lastUpdated');
+      var $statTotal = document.getElementById('statTotal');
+      var $statHigh = document.getElementById('statHigh');
+      var $statFalse = document.getElementById('statFalse');
+      var $statCategories = document.getElementById('statCategories');
+
+      /* ---- Helpers ---- */
+      function escapeHtml(str) {
+        var div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+      }
+
+      function formatDate(iso) {
+        try {
+          var d = new Date(iso);
+          return d.toLocaleDateString('en-US', {
+            month: 'short', day: 'numeric', year: 'numeric',
+            hour: '2-digit', minute: '2-digit'
+          });
+        } catch (e) {
+          return iso;
+        }
+      }
+
+      function harmOrder(level) {
+        var map = { HIGH: 0, MODERATE: 1, LOW: 2 };
+        return map[level] !== undefined ? map[level] : 3;
+      }
+
+      function verdictClass(verdict) {
+        var v = (verdict || '').toUpperCase();
+        if (v === 'FALSE') return 'badge--false';
+        if (v === 'MISLEADING') return 'badge--misleading';
+        if (v === 'LACKS CONTEXT') return 'badge--lacks-context';
+        if (v === 'PARTIALLY TRUE') return 'badge--partially-true';
+        return 'badge--misleading';
+      }
+
+      function harmClass(level) {
+        var h = (level || '').toUpperCase();
+        if (h === 'HIGH') return 'badge--harm-high';
+        if (h === 'MODERATE') return 'badge--harm-moderate';
+        return 'badge--harm-low';
+      }
+
+      function cardBorderClass(level) {
+        var h = (level || '').toUpperCase();
+        if (h === 'HIGH') return 'alert-card--high';
+        if (h === 'MODERATE') return 'alert-card--moderate';
+        return 'alert-card--low';
+      }
+
+      function extractPMID(url) {
+        var match = url.match(/\/(\d+)\/?$/);
+        return match ? 'PMID: ' + match[1] : url.replace(/^https?:\/\//, '').slice(0, 40);
+      }
+
+      function buildShareUrl(alert) {
+        var text = 'Misinformation alert: "' + alert.claim + '" -- Verdict: ' + alert.verdict + '. Get the evidence at MindWatch.';
+        return 'https://x.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent('https://md-amer.github.io/mindwatch') + '&via=mindwatch_ai';
+      }
+
+      var xIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>';
+
+      /* ---- Render ---- */
+      function renderStats(alerts) {
+        var total = alerts.length;
+        var high = alerts.filter(function (a) { return (a.harmLevel || '').toUpperCase() === 'HIGH'; }).length;
+        var falseCount = alerts.filter(function (a) { return (a.verdict || '').toUpperCase() === 'FALSE'; }).length;
+        var cats = {};
+        alerts.forEach(function (a) { if (a.category) cats[a.category] = true; });
+
+        $statTotal.textContent = total;
+        $statHigh.textContent = high;
+        $statFalse.textContent = falseCount;
+        $statCategories.textContent = Object.keys(cats).length;
+      }
+
+      function renderWeekNav() {
+        if (!appData || !appData.weeks || !appData.weeks.length) return;
+
+        // Remove old buttons
+        var oldBtns = $weekNav.querySelectorAll('.week-btn');
+        for (var i = 0; i < oldBtns.length; i++) {
+          oldBtns[i].remove();
+        }
+
+        var labels = ['Latest'];
+        for (var w = 1; w < appData.weeks.length && w < 4; w++) {
+          labels.push('W-' + w);
+        }
+
+        var refNode = $weekRange;
+        labels.forEach(function (label, idx) {
+          var btn = document.createElement('button');
+          btn.className = 'week-btn' + (idx === selectedWeekIdx ? ' week-btn--active' : '');
+          btn.textContent = label;
+          btn.setAttribute('aria-pressed', idx === selectedWeekIdx ? 'true' : 'false');
+          btn.addEventListener('click', function () {
+            selectedWeekIdx = idx;
+            renderWeekNav();
+            renderAlerts();
+          });
+          $weekNav.insertBefore(btn, refNode);
+        });
+
+        var week = appData.weeks[selectedWeekIdx];
+        $weekRange.textContent = week ? week.week : '--';
+      }
+
+      function renderAlerts() {
+        if (!appData || !appData.weeks || !appData.weeks.length) {
+          showEmpty();
+          return;
+        }
+
+        var week = appData.weeks[selectedWeekIdx];
+        if (!week || !week.alerts || !week.alerts.length) {
+          showEmpty('No alerts this week', 'No misinformation claims were tracked for this period.');
+          return;
+        }
+
+        var alerts = week.alerts.slice().sort(function (a, b) {
+          return harmOrder(a.harmLevel) - harmOrder(b.harmLevel);
+        });
+
+        renderStats(alerts);
+
+        var html = '<div class="alerts__heading">' + alerts.length + ' alert' + (alerts.length !== 1 ? 's' : '') + ' this week</div>';
+
+        alerts.forEach(function (alert) {
+          var sources = (alert.sources || []).map(function (src) {
+            return '<a class="source-link" href="' + escapeHtml(src) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(extractPMID(src)) + '</a>';
+          }).join('');
+
+          html += '<article class="alert-card ' + cardBorderClass(alert.harmLevel) + '">' +
+            '<div class="alert-card__badges">' +
+              '<span class="badge ' + verdictClass(alert.verdict) + '">' + escapeHtml(alert.verdict || 'Unknown') + '</span>' +
+              '<span class="badge ' + harmClass(alert.harmLevel) + '">' + escapeHtml((alert.harmLevel || 'Unknown') + ' Harm') + '</span>' +
+              (alert.category ? '<span class="badge badge--category">' + escapeHtml(alert.category) + '</span>' : '') +
+            '</div>' +
+            '<p class="alert-card__claim">' + escapeHtml(alert.claim || '') + '</p>' +
+            '<div class="alert-card__section-label">What the evidence says</div>' +
+            '<p class="alert-card__evidence">' + escapeHtml(alert.evidence || 'No evidence summary available.') + '</p>' +
+            (alert.betterUnderstanding ?
+              '<div class="alert-card__better">' +
+                '<div class="alert-card__better-label">A better understanding</div>' +
+                '<p class="alert-card__better-text">' + escapeHtml(alert.betterUnderstanding) + '</p>' +
+              '</div>' : '') +
+            (sources ? '<div class="alert-card__sources">' + sources + '</div>' : '') +
+            '<div class="alert-card__footer">' +
+              '<span class="alert-card__timestamp">' + (alert.timestamp ? formatDate(alert.timestamp) : '') + '</span>' +
+              '<button class="share-btn" onclick="window.open(\'' + buildShareUrl(alert) + '\', \'_blank\', \'width=600,height=400\')" aria-label="Share on X">' +
+                xIcon + ' Share' +
+              '</button>' +
+            '</div>' +
+          '</article>';
+        });
+
+        $alertsContainer.innerHTML = html;
+      }
+
+      function showEmpty(title, text) {
+        $alertsContainer.innerHTML =
+          '<div class="state-message">' +
+            '<div class="state-message__icon">&#x1F330;</div>' +
+            '<div class="state-message__title">' + escapeHtml(title || 'No data available') + '</div>' +
+            '<div class="state-message__text">' + escapeHtml(text || 'The intelligence feed is empty. Data will appear once the pipeline runs.') + '</div>' +
+          '</div>';
+      }
+
+      function showError(msg) {
+        $alertsContainer.innerHTML =
+          '<div class="state-message">' +
+            '<div class="state-message__icon">&#x26A0;</div>' +
+            '<div class="state-message__title">Failed to load data</div>' +
+            '<div class="state-message__text">' + escapeHtml(msg || 'Could not fetch events.json. The dashboard will retry in 5 minutes.') + '</div>' +
+          '</div>';
+
+        $statTotal.textContent = '--';
+        $statHigh.textContent = '--';
+        $statFalse.textContent = '--';
+        $statCategories.textContent = '--';
+      }
+
+      /* ---- Data fetch ---- */
+      function fetchData() {
+        fetch(DATA_URL, { cache: 'no-cache' })
+          .then(function (res) {
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            return res.json();
+          })
+          .then(function (data) {
+            // Handle both new format (object with weeks) and validate
+            if (data && data.weeks && Array.isArray(data.weeks)) {
+              appData = data;
+            } else {
+              // Unrecognised format — show empty
+              appData = null;
+            }
+
+            if (appData && appData.lastUpdated) {
+              $lastUpdated.textContent = 'Last updated: ' + formatDate(appData.lastUpdated);
+            }
+
+            selectedWeekIdx = 0;
+            renderWeekNav();
+            renderAlerts();
+          })
+          .catch(function (err) {
+            console.error('MindWatch fetch error:', err);
+            if (!appData) {
+              showError(err.message);
+            }
+          });
+      }
+
+      /* ---- Init ---- */
+      fetchData();
+      setInterval(fetchData, REFRESH_MS);
+    })();
+  </script>
+</body>
+</html>
