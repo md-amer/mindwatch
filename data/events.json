@@ -1,6 +1,71 @@
 {
   "weeks": [
     {
+      "week": "2026-03-22 — 2026-03-29",
+      "alerts": [
+        {
+          "claim": "ADHD can be self-diagnosed through social media content.",
+          "verdict": "MISLEADING",
+          "harmLevel": "HIGH",
+          "category": "Self-diagnosis",
+          "evidence": "A study evaluating ADHD content on TikTok and Bilibili found that while there is a surge in ADHD-related content, much of it lacks scientific quality and can lead to misdiagnosis. This trend of self-diagnosis can prevent individuals from seeking proper professional evaluation and treatment (PMID: 41889432).",
+          "betterUnderstanding": "ADHD is a complex neurodevelopmental disorder that requires a professional diagnosis. Relying on social media for self-diagnosis can lead to misunderstandings and inadequate treatment.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41889432"
+          ],
+          "timestamp": "2026-03-29T12:00:00Z"
+        },
+        {
+          "claim": "Chloroquine is an effective treatment for COVID-19.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Pseudoscience",
+          "evidence": "Research from the EPICOVID-19 study highlighted that misinformation about chloroquine's protective effects against COVID-19 was widespread, particularly among certain social groups. This belief could lead to harmful behaviors and avoidance of effective treatments (PMID: 41871153).",
+          "betterUnderstanding": "Chloroquine has not been proven to be an effective treatment for COVID-19, and believing otherwise can lead to dangerous health decisions.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41871153"
+          ],
+          "timestamp": "2026-03-29T12:00:00Z"
+        },
+        {
+          "claim": "Mental health issues in autistic individuals are solely due to their autism.",
+          "verdict": "PARTIALLY TRUE",
+          "harmLevel": "MODERATE",
+          "category": "Stigma reinforcement",
+          "evidence": "A study on school participation among autistic youth revealed that mental health challenges often arise from external barriers and not just the autism diagnosis itself (PMID: 41891296). This suggests that attributing mental health issues solely to autism can overlook important contextual factors.",
+          "betterUnderstanding": "While autistic individuals may face unique challenges, mental health issues can also stem from societal barriers and experiences of discrimination.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41891296"
+          ],
+          "timestamp": "2026-03-29T12:00:00Z"
+        },
+        {
+          "claim": "Digital addiction is not a real mental health issue.",
+          "verdict": "FALSE",
+          "harmLevel": "MODERATE",
+          "category": "Pop psychology",
+          "evidence": "A comparative study found that digital addiction is associated with various mental health-related variables among young people, indicating that it is a legitimate concern that can impact mental well-being (PMID: 41875631).",
+          "betterUnderstanding": "Digital addiction can significantly affect mental health, and recognizing it as a real issue is important for addressing its effects.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41875631"
+          ],
+          "timestamp": "2026-03-29T12:00:00Z"
+        },
+        {
+          "claim": "Vaccination myths have no impact on people's willingness to get vaccinated.",
+          "verdict": "MISLEADING",
+          "harmLevel": "HIGH",
+          "category": "Medication myths",
+          "evidence": "Research evaluating vaccine myths and COVID-19 vaccination readiness found that these myths can significantly influence people's decisions about vaccination, indicating that misinformation can hinder public health efforts (PMID: 41866226).",
+          "betterUnderstanding": "Myths about vaccines can create hesitancy and affect vaccination rates, making it crucial to address these misconceptions to improve public health.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41866226"
+          ],
+          "timestamp": "2026-03-29T12:00:00Z"
+        }
+      ]
+    },
+    {
       "week": "2026-03-15 — 2026-03-22",
       "alerts": [
         {
@@ -220,5 +285,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-03-22T12:24:17.767Z"
+  "lastUpdated": "2026-03-29T12:29:07.122Z"
 }
