@@ -1,6 +1,71 @@
 {
   "weeks": [
     {
+      "week": "2026-03-29 — 2026-04-05",
+      "alerts": [
+        {
+          "claim": "Self-diagnosing mental health conditions based on social media trends is a reliable way to understand your mental health.",
+          "verdict": "MISLEADING",
+          "harmLevel": "HIGH",
+          "category": "Self-diagnosis",
+          "evidence": "The study '#MentalHealthDiagnosis and Self-Diagnosis: Harmful or Helpful on TikTok' (PMID: 41919757) highlights the risks associated with self-diagnosis, noting that while it may empower some individuals, it can also lead to misinterpretation of symptoms and discourage seeking professional help.",
+          "betterUnderstanding": "While self-diagnosis can sometimes raise awareness, it is crucial to consult a mental health professional for an accurate diagnosis and appropriate treatment.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41919757"
+          ],
+          "timestamp": "2026-04-05T12:00:00Z"
+        },
+        {
+          "claim": "Mental health issues are only a problem for young people and do not affect older adults.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Pop psychology",
+          "evidence": "Research indicates that mental health issues, including anxiety and depression, are prevalent across all age groups. The study 'Wellness4Students Program to Mitigate Stress, Anxiety, and Depression Among Makerere University Students in Uganda' (PMID: 41913560) shows that university students experience significant mental health challenges, but this is not limited to youth.",
+          "betterUnderstanding": "Mental health issues can affect anyone, regardless of age, and it is essential to recognize and address these challenges in all demographics.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41913560"
+          ],
+          "timestamp": "2026-04-05T12:00:00Z"
+        },
+        {
+          "claim": "Therapy is only for people with severe mental illnesses.",
+          "verdict": "PARTIALLY TRUE",
+          "harmLevel": "MODERATE",
+          "category": "Therapy misconceptions",
+          "evidence": "The study 'Engaging LGBTQ+ Youth in Human-Centered Design of a Digital Health Intervention via Discord' (PMID: 41911545) emphasizes the importance of mental health interventions for various populations, including those who may not have severe mental illnesses but still face significant stressors.",
+          "betterUnderstanding": "Therapy can benefit anyone, not just those with severe mental illnesses, as it provides support for managing everyday stress and emotional challenges.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41911545"
+          ],
+          "timestamp": "2026-04-05T12:00:00Z"
+        },
+        {
+          "claim": "Taking medication for mental health issues is a sign of weakness.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Medication myths",
+          "evidence": "The paper 'Pain Medicine and the Opioid Crisis: Time to Own Our Responsibility!' (PMID: 41934367) discusses the complexities of managing pain and mental health, emphasizing that medication can be a necessary and effective part of treatment for many individuals.",
+          "betterUnderstanding": "Using medication is a valid and often essential part of managing mental health, and it reflects a proactive approach to health rather than a sign of weakness.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41934367"
+          ],
+          "timestamp": "2026-04-05T12:00:00Z"
+        },
+        {
+          "claim": "Mental health problems are solely caused by personal failures or weaknesses.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Stigma reinforcement",
+          "evidence": "The study 'Psychosocial hazard exposures and mental health outcomes among ambulance Emergency Medical Technicians in Ghana' (PMID: 41911217) illustrates how external factors, such as work-related stressors, significantly impact mental health, debunking the myth that mental health issues arise only from personal failings.",
+          "betterUnderstanding": "Mental health issues are influenced by a combination of personal, social, and environmental factors, and it is important to understand these complexities rather than attributing them to individual weaknesses.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41911217"
+          ],
+          "timestamp": "2026-04-05T12:00:00Z"
+        }
+      ]
+    },
+    {
       "week": "2026-03-22 — 2026-03-29",
       "alerts": [
         {
@@ -285,5 +350,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-03-29T12:29:07.122Z"
+  "lastUpdated": "2026-04-05T12:30:22.515Z"
 }
