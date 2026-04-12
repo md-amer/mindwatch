@@ -1,6 +1,71 @@
 {
   "weeks": [
     {
+      "week": "2026-04-05 — 2026-04-12",
+      "alerts": [
+        {
+          "claim": "HIV can only be transmitted through sexual contact.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Stigma reinforcement",
+          "evidence": "The study 'Persistent HIV Transmission Misconceptions Among People Who Inject Drugs in Massachusetts, USA' highlights that misconceptions about HIV transmission persist, including the belief that it can only be spread through sexual contact, which is incorrect. (PMID: 41964811)",
+          "betterUnderstanding": "HIV can be transmitted through various means, including sharing needles and from mother to child during childbirth or breastfeeding, not just through sexual contact.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41964811"
+          ],
+          "timestamp": "2026-04-12T12:00:00Z"
+        },
+        {
+          "claim": "HPV vaccination is unnecessary for girls living with HIV.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Medication myths",
+          "evidence": "The research titled 'Human Papillomavirus Vaccine Hesitancy and Uptake Among Adolescent Girls Living with HIV in Sierra Leone' emphasizes the critical need for HPV vaccination among girls living with HIV to prevent cervical cancer. (PMID: 41964808)",
+          "betterUnderstanding": "HPV vaccination is essential for all girls, especially those living with HIV, as they are at a higher risk for cervical cancer.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41964808"
+          ],
+          "timestamp": "2026-04-12T12:00:00Z"
+        },
+        {
+          "claim": "Digital health interventions are not effective for mental health support.",
+          "verdict": "MISLEADING",
+          "harmLevel": "MODERATE",
+          "category": "Therapy misconceptions",
+          "evidence": "The study 'e-Mental Health Intervention Preferences Among Informal Caregivers of Adults Living with Chronic Kidney Disease' indicates that digital interventions can be beneficial for mental health, especially for caregivers who often lack access to traditional support. (PMID: 41945902)",
+          "betterUnderstanding": "Digital health interventions can provide valuable support and resources for mental health, particularly for underserved populations.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41945902"
+          ],
+          "timestamp": "2026-04-12T12:00:00Z"
+        },
+        {
+          "claim": "Social media is harmful and does not promote health behaviors.",
+          "verdict": "PARTIALLY TRUE",
+          "harmLevel": "LOW",
+          "category": "Pop psychology",
+          "evidence": "The study 'Social Media Intervention Based on the Information-Motivation-Behavioral Skills Model' shows that social media can effectively promote health behaviors, such as HIV testing among men who have sex with men. (PMID: 41945644)",
+          "betterUnderstanding": "While social media can have negative effects, it can also be a powerful tool for promoting positive health behaviors and interventions.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41945644"
+          ],
+          "timestamp": "2026-04-12T12:00:00Z"
+        },
+        {
+          "claim": "Adolescents do not want digital health interventions.",
+          "verdict": "FALSE",
+          "harmLevel": "LOW",
+          "category": "Therapy misconceptions",
+          "evidence": "The study 'Perspectives of adolescents and young people on Digital Health Interventions' reveals that adolescents are open to and interested in digital health solutions to address their health needs. (PMID: 41945604)",
+          "betterUnderstanding": "Adolescents are often eager for digital health interventions that are tailored to their unique health challenges and preferences.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41945604"
+          ],
+          "timestamp": "2026-04-12T12:00:00Z"
+        }
+      ]
+    },
+    {
       "week": "2026-03-29 — 2026-04-05",
       "alerts": [
         {
@@ -350,5 +415,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-04-05T12:30:22.515Z"
+  "lastUpdated": "2026-04-12T12:34:14.533Z"
 }
