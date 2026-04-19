@@ -1,6 +1,71 @@
 {
   "weeks": [
     {
+      "week": "2026-04-12 — 2026-04-19",
+      "alerts": [
+        {
+          "claim": "Mental health issues are just a phase and will go away on their own.",
+          "verdict": "MISLEADING",
+          "harmLevel": "HIGH",
+          "category": "Stigma reinforcement",
+          "evidence": "The study on portrayals of depression on TikTok highlights that while visibility can raise awareness, it often lacks diagnostic accuracy, leading to misconceptions about the nature of mental health issues (PMID: 41973877). This can contribute to the belief that mental health problems are temporary and do not require professional help.",
+          "betterUnderstanding": "Mental health issues can be complex and often require intervention. Seeking help early can lead to better outcomes.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41973877"
+          ],
+          "timestamp": "2026-04-19T12:00:00Z"
+        },
+        {
+          "claim": "All mental health information on social media is accurate and trustworthy.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Pop psychology",
+          "evidence": "The content analysis of depression portrayals on TikTok reveals significant concerns about the diagnostic accuracy of mental health content shared on social media platforms (PMID: 41973877). This indicates that not all information is reliable and can mislead users.",
+          "betterUnderstanding": "It's crucial to verify mental health information with credible sources and professionals rather than relying solely on social media.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41973877"
+          ],
+          "timestamp": "2026-04-19T12:00:00Z"
+        },
+        {
+          "claim": "You can self-diagnose mental health conditions based on social media content.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Self-diagnosis",
+          "evidence": "The study comparing images of depression in mass media and AI-generated pictures indicates that representations of mental health conditions can be distorted, leading to misinterpretations of symptoms (PMID: 41980240). This can encourage individuals to incorrectly self-diagnose.",
+          "betterUnderstanding": "Accurate diagnosis of mental health conditions should be conducted by qualified professionals who can consider the full context of an individual's experiences.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41980240"
+          ],
+          "timestamp": "2026-04-19T12:00:00Z"
+        },
+        {
+          "claim": "Exercise alone can cure mental health disorders.",
+          "verdict": "PARTIALLY TRUE",
+          "harmLevel": "MODERATE",
+          "category": "Medication myths",
+          "evidence": "While the ISOFITTER study discusses the benefits of isometric exercise for hypertension, it does not imply that exercise alone is a cure for mental health disorders, which often require a multifaceted treatment approach (PMID: 41647769).",
+          "betterUnderstanding": "Exercise can be a helpful component of a comprehensive treatment plan for mental health, but it should not replace professional therapy or medication when needed.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41647769"
+          ],
+          "timestamp": "2026-04-19T12:00:00Z"
+        },
+        {
+          "claim": "Mental health problems are more prevalent in urban areas than rural areas.",
+          "verdict": "LACKS CONTEXT",
+          "harmLevel": "LOW",
+          "category": "Stigma reinforcement",
+          "evidence": "The study on community understanding of COVID-19 and mental health in Haiti, Malawi, and Rwanda highlights that mental health perceptions can vary significantly across different contexts and communities (PMID: 41988959). Thus, generalizing prevalence based on location can be misleading.",
+          "betterUnderstanding": "Mental health issues can affect individuals in both urban and rural settings, and prevalence may depend on various factors, including access to care and cultural perceptions.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41988959"
+          ],
+          "timestamp": "2026-04-19T12:00:00Z"
+        }
+      ]
+    },
+    {
       "week": "2026-04-05 — 2026-04-12",
       "alerts": [
         {
@@ -415,5 +480,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-04-12T12:34:14.533Z"
+  "lastUpdated": "2026-04-19T12:33:38.082Z"
 }
