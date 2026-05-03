@@ -1,6 +1,71 @@
 {
   "weeks": [
     {
+      "week": "2026-04-26 — 2026-05-03",
+      "alerts": [
+        {
+          "claim": "Men don't need mental health support because they are naturally tougher.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Stigma reinforcement",
+          "evidence": "Research indicates that men are less likely to seek help for mental health issues, leading to higher mortality rates among young men due to untreated mental health conditions (PMID: 42069537). This stereotype can prevent men from accessing necessary support.",
+          "betterUnderstanding": "Mental health is important for everyone, regardless of gender. Men should feel encouraged to seek help and engage in mental health promotion efforts.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42069537"
+          ],
+          "timestamp": "2026-05-03T12:00:00Z"
+        },
+        {
+          "claim": "Social media is always harmful to mental health.",
+          "verdict": "PARTIALLY TRUE",
+          "harmLevel": "MODERATE",
+          "category": "Pop psychology",
+          "evidence": "While excessive use of social media can lead to negative mental health outcomes, such as anxiety and depression, some studies suggest that platforms like Instagram can also foster community and support among users (PMID: 42054304).",
+          "betterUnderstanding": "The impact of social media on mental health is complex; it can be both beneficial and harmful depending on how it is used.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42054304"
+          ],
+          "timestamp": "2026-05-03T12:00:00Z"
+        },
+        {
+          "claim": "Pregnant women should avoid all medications for mental health issues.",
+          "verdict": "MISLEADING",
+          "harmLevel": "HIGH",
+          "category": "Medication myths",
+          "evidence": "Research shows that pregnant and postpartum individuals can safely engage in medication treatment for opioid use disorder, which can also apply to mental health medications when prescribed appropriately (PMID: 42069062). Avoiding treatment can lead to worse outcomes for both mother and child.",
+          "betterUnderstanding": "It is crucial for pregnant individuals to discuss medication options with their healthcare providers to ensure both their health and the health of their baby.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42069062"
+          ],
+          "timestamp": "2026-05-03T12:00:00Z"
+        },
+        {
+          "claim": "Adolescents with HIV do not need to worry about treatment adherence.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Stigma reinforcement",
+          "evidence": "Adolescents living with HIV face unique challenges that significantly impact their adherence to antiretroviral therapy (ART), leading to poorer health outcomes compared to adults (PMID: 42058373).",
+          "betterUnderstanding": "Adolescents need tailored support and resources to help them adhere to their treatment plans effectively.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42058373"
+          ],
+          "timestamp": "2026-05-03T12:00:00Z"
+        },
+        {
+          "claim": "Digital addiction is just an excuse for poor mental health.",
+          "verdict": "MISLEADING",
+          "harmLevel": "MODERATE",
+          "category": "Pop psychology",
+          "evidence": "Research indicates that digital addiction can have significant mental health-related variables and is a genuine concern among young people, affecting their well-being (PMID: 41875631).",
+          "betterUnderstanding": "Digital addiction is a recognized issue that can exacerbate existing mental health problems and should be addressed seriously.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41875631"
+          ],
+          "timestamp": "2026-05-03T12:00:00Z"
+        }
+      ]
+    },
+    {
       "week": "2026-04-12 — 2026-04-19",
       "alerts": [
         {
@@ -480,5 +545,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-04-19T12:33:38.082Z"
+  "lastUpdated": "2026-05-03T12:40:54.511Z"
 }
