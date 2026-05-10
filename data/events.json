@@ -1,6 +1,71 @@
 {
   "weeks": [
     {
+      "week": "2026-05-03 — 2026-05-10",
+      "alerts": [
+        {
+          "claim": "Mental health issues can be resolved by simply thinking positively.",
+          "verdict": "MISLEADING",
+          "harmLevel": "MODERATE",
+          "category": "Toxic positivity",
+          "evidence": "The study on information avoidance in mental health highlights that many individuals delay or avoid seeking help despite the availability of effective treatments. This suggests that simply relying on positive thinking can prevent individuals from recognizing their need for professional support (PMID: 42077045).",
+          "betterUnderstanding": "While a positive mindset can be beneficial, mental health conditions often require professional intervention and support for effective management.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42077045/"
+          ],
+          "timestamp": "2026-05-10T12:00:00Z"
+        },
+        {
+          "claim": "People with mental health issues should just 'snap out of it' or 'get over it.'",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Stigma reinforcement",
+          "evidence": "The research on stigma in depression communication shows that societal narratives often trivialize mental health issues, leading to a lack of understanding about their complexity and severity (PMID: 42076974).",
+          "betterUnderstanding": "Mental health conditions are real and often require comprehensive treatment and support, rather than simplistic solutions.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42076974/"
+          ],
+          "timestamp": "2026-05-10T12:00:00Z"
+        },
+        {
+          "claim": "Only certain groups are affected by mental health issues, such as immigrants or minorities.",
+          "verdict": "PARTIALLY TRUE",
+          "harmLevel": "LOW",
+          "category": "Stigma reinforcement",
+          "evidence": "While the study on mental health care access among Latinx and Indigenous Mexican immigrants highlights the unique challenges these populations face, it does not imply that mental health issues are exclusive to them (PMID: 42083009).",
+          "betterUnderstanding": "Mental health issues can affect anyone, regardless of their background, though some groups may face additional barriers to accessing care.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42083009/"
+          ],
+          "timestamp": "2026-05-10T12:00:00Z"
+        },
+        {
+          "claim": "Seeking help for mental health is a sign of weakness.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Stigma reinforcement",
+          "evidence": "The qualitative study on nurses' experiences caring for patients with mental health concerns emphasizes the importance of seeking help and the challenges faced by individuals in doing so (PMID: 42070900).",
+          "betterUnderstanding": "Seeking help is a courageous step towards recovery and should be viewed as a strength, not a weakness.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42070900/"
+          ],
+          "timestamp": "2026-05-10T12:00:00Z"
+        },
+        {
+          "claim": "Mental health treatments are ineffective and don't work.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Medication myths",
+          "evidence": "The study on barriers to mental health care highlights that many individuals avoid seeking help despite effective treatments being available, indicating that the treatments themselves are not the issue (PMID: 42077045).",
+          "betterUnderstanding": "Effective treatments for mental health conditions exist, but barriers to access and stigma often prevent individuals from utilizing them.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42077045/"
+          ],
+          "timestamp": "2026-05-10T12:00:00Z"
+        }
+      ]
+    },
+    {
       "week": "2026-04-26 — 2026-05-03",
       "alerts": [
         {
@@ -545,5 +610,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-05-03T12:40:54.511Z"
+  "lastUpdated": "2026-05-10T12:49:37.851Z"
 }
