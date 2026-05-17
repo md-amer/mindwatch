@@ -1,6 +1,71 @@
 {
   "weeks": [
     {
+      "week": "2026-05-10 — 2026-05-17",
+      "alerts": [
+        {
+          "claim": "Older adults don't need mental health treatment because they are just experiencing normal aging.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Stigma reinforcement",
+          "evidence": "The study on digital phenotyping for depression screening in older adults highlights that depressive symptoms are common in late adulthood, yet many remain undiagnosed and untreated due to stigma. This indicates that mental health issues in older adults are often overlooked and require attention (PMID: 42139722).",
+          "betterUnderstanding": "Mental health issues, including depression, are not a normal part of aging and should be addressed with appropriate treatment.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42139722"
+          ],
+          "timestamp": "2026-05-17T12:00:00Z"
+        },
+        {
+          "claim": "Social media is a reliable source for mental health information.",
+          "verdict": "MISLEADING",
+          "harmLevel": "MODERATE",
+          "category": "Pseudoscience",
+          "evidence": "A study examining college students' perceptions of mental health information on social media found that while students frequently seek information online, the credibility of such information varies significantly (PMID: 42115591).",
+          "betterUnderstanding": "While social media can provide access to mental health information, users should critically evaluate the credibility of the sources before relying on them.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42115591"
+          ],
+          "timestamp": "2026-05-17T12:00:00Z"
+        },
+        {
+          "claim": "People with mental health conditions should avoid seeking help during pregnancy.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Stigma reinforcement",
+          "evidence": "The UNDERSTAND study reveals that healthcare professionals emphasize the importance of communication and support for pregnant individuals with mental health conditions, indicating that seeking help is crucial for their well-being (PMID: 42139190).",
+          "betterUnderstanding": "Pregnant individuals with mental health conditions should seek professional help to ensure both their health and that of their baby.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42139190"
+          ],
+          "timestamp": "2026-05-17T12:00:00Z"
+        },
+        {
+          "claim": "Mental health issues are less prevalent among sexual and gender minority groups.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Stigma reinforcement",
+          "evidence": "Research indicates that sexual and gender minority individuals are more susceptible to mental health problems compared to their heterosexual and cisgender counterparts, often due to stigma and lack of social support (PMID: 42116571).",
+          "betterUnderstanding": "In fact, sexual and gender minority groups face higher rates of mental health issues, highlighting the need for targeted support and resources.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42116571"
+          ],
+          "timestamp": "2026-05-17T12:00:00Z"
+        },
+        {
+          "claim": "Psychosis only involves hallucinations and delusions.",
+          "verdict": "PARTIALLY TRUE",
+          "harmLevel": "MODERATE",
+          "category": "Pop psychology",
+          "evidence": "The systematic review on social connectedness in individuals with recent onset psychosis shows that psychosis is also associated with significant difficulties in forming interpersonal relationships, leading to isolation and distress (PMID: 42129700).",
+          "betterUnderstanding": "While hallucinations and delusions are key symptoms, psychosis also deeply affects social relationships and emotional well-being.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42129700"
+          ],
+          "timestamp": "2026-05-17T12:00:00Z"
+        }
+      ]
+    },
+    {
       "week": "2026-05-03 — 2026-05-10",
       "alerts": [
         {
@@ -610,5 +675,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-05-10T12:49:37.851Z"
+  "lastUpdated": "2026-05-17T12:51:27.084Z"
 }
