@@ -1,6 +1,71 @@
 {
   "weeks": [
     {
+      "week": "2026-05-17 — 2026-05-24",
+      "alerts": [
+        {
+          "claim": "People with HIV can live normal lives and don't need to worry about their health.",
+          "verdict": "MISLEADING",
+          "harmLevel": "MODERATE",
+          "category": "Stigma reinforcement",
+          "evidence": "While effective antiretroviral therapy (ART) can manage HIV, stigma and misinformation can lead to reduced engagement in care and suboptimal adherence to treatment, which negatively impacts health outcomes (PMID: 42176074).",
+          "betterUnderstanding": "People with HIV can lead healthy lives with proper treatment, but they must remain engaged in their healthcare to manage the condition effectively.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42176074/"
+          ],
+          "timestamp": "2026-05-24T12:00:00Z"
+        },
+        {
+          "claim": "Mental health issues are just a phase and will go away on their own.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Self-diagnosis",
+          "evidence": "Research shows that mental health disorders, such as depression and anxiety, are prevalent among youth with chronic conditions like type 1 diabetes, and these issues require appropriate intervention rather than being dismissed as temporary (PMID: 42148554).",
+          "betterUnderstanding": "Mental health issues often require professional help and do not simply resolve on their own; early intervention can lead to better outcomes.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42148554/"
+          ],
+          "timestamp": "2026-05-24T12:00:00Z"
+        },
+        {
+          "claim": "All mental health treatments are ineffective and only make things worse.",
+          "verdict": "PARTIALLY TRUE",
+          "harmLevel": "HIGH",
+          "category": "Therapy misconceptions",
+          "evidence": "Some individuals may have negative experiences with certain treatments, but studies highlight the importance of personalized care approaches, especially for those with severe mental illnesses (PMID: 42168971).",
+          "betterUnderstanding": "While not all treatments work for everyone, many evidence-based therapies can significantly improve mental health when tailored to individual needs.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42168971/"
+          ],
+          "timestamp": "2026-05-24T12:00:00Z"
+        },
+        {
+          "claim": "Stigma surrounding mental health is no longer a significant issue.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Stigma reinforcement",
+          "evidence": "Stigma continues to be a major barrier to care for individuals with mental health issues, as evidenced by the ongoing discrimination and emotional distress faced by healthcare providers and patients alike (PMID: 42171531).",
+          "betterUnderstanding": "Stigma remains a critical issue that affects both individuals seeking help and those providing care, highlighting the need for continued advocacy and education.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42171531/"
+          ],
+          "timestamp": "2026-05-24T12:00:00Z"
+        },
+        {
+          "claim": "Injectable ART for HIV is dangerous and should be avoided.",
+          "verdict": "MISLEADING",
+          "harmLevel": "MODERATE",
+          "category": "Medication myths",
+          "evidence": "Misinformation about injectable ART can create barriers to care, despite its effectiveness in managing HIV for many individuals (PMID: 42151704).",
+          "betterUnderstanding": "Injectable ART can be a safe and effective option for many people living with HIV, and understanding its benefits is crucial for improving adherence to treatment.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42151704/"
+          ],
+          "timestamp": "2026-05-24T12:00:00Z"
+        }
+      ]
+    },
+    {
       "week": "2026-05-10 — 2026-05-17",
       "alerts": [
         {
@@ -675,5 +740,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-05-17T12:51:27.084Z"
+  "lastUpdated": "2026-05-24T12:55:12.544Z"
 }
