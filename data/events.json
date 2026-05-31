@@ -1,6 +1,71 @@
 {
   "weeks": [
     {
+      "week": "2026-05-24 — 2026-05-31",
+      "alerts": [
+        {
+          "claim": "Older adults don't care about their sexual health and should not discuss it.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Stigma reinforcement",
+          "evidence": "Research shows that ageist stereotypes significantly hinder the sexual health and rights of older adults, particularly those in geriatric psychiatry. This stigma can prevent necessary discussions and interventions regarding their sexual health (PMID: 42214071).",
+          "betterUnderstanding": "Older adults have valid sexual health needs and concerns, and addressing these openly can improve their overall well-being.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42214071"
+          ],
+          "timestamp": "2026-05-31T12:00:00Z"
+        },
+        {
+          "claim": "Mental health issues in healthcare workers are exaggerated and not a real concern.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Stigma reinforcement",
+          "evidence": "Healthcare workers face significant psychological demands, leading to increased risks for burnout and PTSD. Stigma and underreporting complicate the assessment of their mental health, indicating that these issues are very real and pressing (PMID: 42202278).",
+          "betterUnderstanding": "Mental health challenges among healthcare workers are serious and require attention and support to ensure their well-being.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42202278"
+          ],
+          "timestamp": "2026-05-31T12:00:00Z"
+        },
+        {
+          "claim": "Trading cryptoassets is harmless and doesn't affect mental health.",
+          "verdict": "MISLEADING",
+          "harmLevel": "MODERATE",
+          "category": "Pop psychology",
+          "evidence": "Problematic trading of cryptoassets is associated with increased depressive symptoms, anxiety, and social isolation, highlighting that such activities can have significant mental health impacts (PMID: 42189836).",
+          "betterUnderstanding": "While trading can be a hobby, excessive or problematic trading can lead to serious mental health issues, including anxiety and depression.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42189836"
+          ],
+          "timestamp": "2026-05-31T12:00:00Z"
+        },
+        {
+          "claim": "Talking about suicide makes people more likely to attempt it.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Stigma reinforcement",
+          "evidence": "Public discussions and state policies regarding suicide are crucial for prevention efforts. Open communication can help reduce stigma and encourage individuals to seek help (PMID: 42184359).",
+          "betterUnderstanding": "Discussing suicide openly can lead to increased awareness and support, ultimately helping to prevent suicide rather than increase its likelihood.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42184359"
+          ],
+          "timestamp": "2026-05-31T12:00:00Z"
+        },
+        {
+          "claim": "Women firefighters are less affected by mental health issues than their male counterparts.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Stigma reinforcement",
+          "evidence": "Research indicates that women firefighters experience rates of depression, anxiety, and PTSD similar to men, especially in environments marked by discrimination and exclusion (PMID: 42178494).",
+          "betterUnderstanding": "Women in firefighting face significant mental health challenges, and their experiences should be recognized and addressed just as seriously as those of their male colleagues.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42178494"
+          ],
+          "timestamp": "2026-05-31T12:00:00Z"
+        }
+      ]
+    },
+    {
       "week": "2026-05-17 — 2026-05-24",
       "alerts": [
         {
@@ -740,5 +805,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-05-24T12:55:12.544Z"
+  "lastUpdated": "2026-05-31T13:07:59.154Z"
 }
