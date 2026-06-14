@@ -1,6 +1,71 @@
 {
   "weeks": [
     {
+      "week": "2026-06-07 — 2026-06-14",
+      "alerts": [
+        {
+          "claim": "Mental health issues during pregnancy are just a phase and will resolve on their own.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Stigma reinforcement",
+          "evidence": "Perinatal depression and anxiety affect up to 1 in 5 women globally and can have significant long-term effects if untreated, as highlighted in the study on preventive social media interventions for perinatal mental health (PMID: 42269684). Ignoring these issues can lead to severe consequences for both the mother and child.",
+          "betterUnderstanding": "Perinatal mental health issues require attention and intervention, as they can persist and worsen without proper support. Seeking help is crucial for the well-being of both the mother and her child.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42269684"
+          ],
+          "timestamp": "2026-06-14T12:00:00Z"
+        },
+        {
+          "claim": "AI chatbots cannot provide any real mental health support.",
+          "verdict": "MISLEADING",
+          "harmLevel": "LOW",
+          "category": "Pop psychology",
+          "evidence": "While AI chatbots are not a replacement for professional therapy, they can offer support by facilitating disclosure and providing resources, as discussed in the study examining stress and disclosure pathways in gay men's interactions with AI chatbots (PMID: 42259301).",
+          "betterUnderstanding": "AI chatbots can be effective tools for mental health support, especially in providing accessible resources and encouraging individuals to share their concerns, but they should complement, not replace, professional help.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42259301"
+          ],
+          "timestamp": "2026-06-14T12:00:00Z"
+        },
+        {
+          "claim": "Stress management techniques like VR and wearables are ineffective.",
+          "verdict": "FALSE",
+          "harmLevel": "MODERATE",
+          "category": "Pseudoscience",
+          "evidence": "The study on digital health monitoring for stress in frontline nurses shows that integrated digital suites combining various interventions, including VR, can effectively manage stress and improve outcomes (PMID: 42275639).",
+          "betterUnderstanding": "Various stress management techniques, including VR and wearables, have shown promise in research and can be effective when used in combination with other interventions.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42275639"
+          ],
+          "timestamp": "2026-06-14T12:00:00Z"
+        },
+        {
+          "claim": "Co-production in mental health care is just a buzzword with no real impact.",
+          "verdict": "PARTIALLY TRUE",
+          "harmLevel": "LOW",
+          "category": "Therapy misconceptions",
+          "evidence": "While co-production may be viewed as a buzzword, the scoping review on co-production in mental health care highlights its importance in promoting effective and inclusive service design (PMID: 42269204).",
+          "betterUnderstanding": "Co-production is not just a trend; it plays a vital role in improving mental health services by involving stakeholders in the design and evaluation processes, leading to better outcomes.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42269204"
+          ],
+          "timestamp": "2026-06-14T12:00:00Z"
+        },
+        {
+          "claim": "Only therapists can help with mental health issues; friends and family are not effective.",
+          "verdict": "MISLEADING",
+          "harmLevel": "MODERATE",
+          "category": "Stigma reinforcement",
+          "evidence": "The study on perinatal mental health interventions emphasizes the importance of community support in addressing mental health issues, especially in underserved areas (PMID: 42269684).",
+          "betterUnderstanding": "While professional help is essential, support from friends and family can also play a crucial role in mental health recovery, particularly in communities with limited access to mental health services.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42269684"
+          ],
+          "timestamp": "2026-06-14T12:00:00Z"
+        }
+      ]
+    },
+    {
       "week": "2026-05-31 — 2026-06-07",
       "alerts": [
         {
@@ -714,72 +779,7 @@
           "timestamp": "2026-03-22T12:00:00Z"
         }
       ]
-    },
-    {
-      "week": "2026-03-10 — 2026-03-17",
-      "alerts": [
-        {
-          "claim": "Social media is always harmful to mental health.",
-          "verdict": "MISLEADING",
-          "harmLevel": "MODERATE",
-          "category": "Pop psychology",
-          "evidence": "Research indicates that different types of social media use can have varying effects on adolescents' mental health. For example, the study titled 'Different Social Media Use Types, Psychological Needs, and Adolescents' Mental Health' (PMID: 41836908) found that public active use can be beneficial, while passive use may be detrimental.",
-          "betterUnderstanding": "While social media can have negative effects, it can also provide social support and fulfill psychological needs when used actively and positively.",
-          "sources": [
-            "https://pubmed.ncbi.nlm.nih.gov/41836908"
-          ],
-          "timestamp": "2026-03-17T12:00:00Z"
-        },
-        {
-          "claim": "All mental health issues can be resolved through self-help and online tools alone.",
-          "verdict": "PARTIALLY TRUE",
-          "harmLevel": "HIGH",
-          "category": "Therapy misconceptions",
-          "evidence": "The study 'Study Protocol: It is time to dig deeper: A cross-country implementation mapping study of the iFightDepression® (online self-management) tool' (PMID: 41818186) emphasizes that while online self-management tools can be effective, they are best used alongside professional support.",
-          "betterUnderstanding": "Self-help tools can be beneficial, but they should complement, not replace, professional mental health care, especially for more severe conditions.",
-          "sources": [
-            "https://pubmed.ncbi.nlm.nih.gov/41818186"
-          ],
-          "timestamp": "2026-03-17T12:00:00Z"
-        },
-        {
-          "claim": "Mental health disorders in veterans are often overdiagnosed.",
-          "verdict": "FALSE",
-          "harmLevel": "HIGH",
-          "category": "Stigma reinforcement",
-          "evidence": "The study 'Qualitative analysis of mental health clinicians' perspectives on external barriers to diagnosing anxiety disorders in the Veterans Health Administration' (PMID: 41817626) highlights that anxiety disorders are underdiagnosed among veterans, who actually experience higher prevalence rates than the general population.",
-          "betterUnderstanding": "Veterans often face barriers to receiving accurate diagnoses and treatment for anxiety disorders, which are prevalent in this population.",
-          "sources": [
-            "https://pubmed.ncbi.nlm.nih.gov/41817626"
-          ],
-          "timestamp": "2026-03-17T12:00:00Z"
-        },
-        {
-          "claim": "Eating disorder recovery is solely about willpower and personal strength.",
-          "verdict": "FALSE",
-          "harmLevel": "HIGH",
-          "category": "Stigma reinforcement",
-          "evidence": "The study 'My eating disorder story: an interpretative phenomenological analysis of social media, narrative identity, and patient influencers in eating disorder recovery' (PMID: 41814389) shows that recovery is complex and influenced by social factors, not just individual willpower.",
-          "betterUnderstanding": "Recovery from eating disorders involves a multifaceted approach that includes social support, professional treatment, and understanding of the disorder's complexities.",
-          "sources": [
-            "https://pubmed.ncbi.nlm.nih.gov/41814389"
-          ],
-          "timestamp": "2026-03-17T12:00:00Z"
-        },
-        {
-          "claim": "Mental health misinformation is not a significant issue among children and adolescents.",
-          "verdict": "FALSE",
-          "harmLevel": "HIGH",
-          "category": "Stigma reinforcement",
-          "evidence": "The article 'Debate: Standing up for science - how to combat misinformation in child mental health?' (PMID: 41813096) emphasizes that misinformation about mental health is prevalent on social media and can significantly affect children's understanding and attitudes towards mental health.",
-          "betterUnderstanding": "Misinformation about mental health is widespread and can lead to harmful beliefs and stigma, making it crucial to promote accurate information.",
-          "sources": [
-            "https://pubmed.ncbi.nlm.nih.gov/41813096"
-          ],
-          "timestamp": "2026-03-17T12:00:00Z"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-06-07T13:15:36.822Z"
+  "lastUpdated": "2026-06-14T13:23:33.307Z"
 }
