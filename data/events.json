@@ -1,6 +1,71 @@
 {
   "weeks": [
     {
+      "week": "2026-06-14 — 2026-06-21",
+      "alerts": [
+        {
+          "claim": "Mental health issues are just a phase and will go away on their own.",
+          "verdict": "MISLEADING",
+          "harmLevel": "HIGH",
+          "category": "Stigma reinforcement",
+          "evidence": "The study mapping mental health and suicide-related discourse on TikTok highlights that many young people perceive mental health struggles as temporary, which can lead to a lack of help-seeking behavior (PMID: 42297148). This misconception can prevent individuals from accessing necessary support and treatment.",
+          "betterUnderstanding": "While some mental health issues may improve over time, many require professional intervention and support to ensure proper management and recovery.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42297148/"
+          ],
+          "timestamp": "2026-06-21T12:00:00Z"
+        },
+        {
+          "claim": "Pharmacists are not equipped to help with autism spectrum disorder (ASD).",
+          "verdict": "PARTIALLY TRUE",
+          "harmLevel": "MODERATE",
+          "category": "Medication myths",
+          "evidence": "The study on community pharmacists' knowledge and attitudes towards ASD care indicates that while pharmacists may have some knowledge, their readiness to support families is still underexplored (PMID: 42298471). This suggests that there is potential for pharmacists to play a more active role in ASD management.",
+          "betterUnderstanding": "Pharmacists can be valuable resources for families dealing with ASD, but their training and knowledge may vary, highlighting the need for better education and collaboration in care.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42298471/"
+          ],
+          "timestamp": "2026-06-21T12:00:00Z"
+        },
+        {
+          "claim": "Physical activity during pregnancy is harmful and should be avoided.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Pop psychology",
+          "evidence": "Research shows that healthy pregnant women are recommended to engage in at least 150 minutes of moderate-intensity aerobic activity per week, which is associated with numerous health benefits (PMID: 42298449). Misunderstanding this can lead to unnecessary inactivity and health risks.",
+          "betterUnderstanding": "Regular physical activity is safe and beneficial for most pregnant women, contributing to better physical and psychological health.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42298449/"
+          ],
+          "timestamp": "2026-06-21T12:00:00Z"
+        },
+        {
+          "claim": "Social media only spreads negativity about mental health.",
+          "verdict": "MISLEADING",
+          "harmLevel": "LOW",
+          "category": "Toxic positivity",
+          "evidence": "The study on TikTok discourse reveals that there is a significant amount of supportive and recovery-oriented content, alongside problem-focused discussions (PMID: 42297148). This indicates that social media can serve as a platform for both awareness and support.",
+          "betterUnderstanding": "While negative content exists, social media also provides a space for community support and positive discussions around mental health.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42297148/"
+          ],
+          "timestamp": "2026-06-21T12:00:00Z"
+        },
+        {
+          "claim": "Cervical cancer screenings are unnecessary if you feel fine.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Stigma reinforcement",
+          "evidence": "The qualitative study on cervical cancer prevention indicates that despite the availability of screenings, misconceptions about their necessity persist, leading to low participation rates (PMID: 42298405). This can result in late-stage diagnoses and poorer health outcomes.",
+          "betterUnderstanding": "Regular screenings are crucial for early detection of cervical cancer, even if you feel healthy, as many conditions can be asymptomatic.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42298405/"
+          ],
+          "timestamp": "2026-06-21T12:00:00Z"
+        }
+      ]
+    },
+    {
       "week": "2026-06-07 — 2026-06-14",
       "alerts": [
         {
@@ -714,72 +779,7 @@
           "timestamp": "2026-03-29T12:00:00Z"
         }
       ]
-    },
-    {
-      "week": "2026-03-15 — 2026-03-22",
-      "alerts": [
-        {
-          "claim": "Mental health issues are only a problem for young people and don't affect older adults.",
-          "verdict": "FALSE",
-          "harmLevel": "HIGH",
-          "category": "Stigma reinforcement",
-          "evidence": "The study on aging in place versus institutional care highlights that older adults face significant mental health challenges and have unique experiences that need to be addressed (PMID: 41854343). Ignoring these issues perpetuates stigma and may prevent older adults from seeking necessary help.",
-          "betterUnderstanding": "Mental health issues can affect individuals of all ages, including older adults, who may experience unique challenges related to their living situations and social support.",
-          "sources": [
-            "https://pubmed.ncbi.nlm.nih.gov/41854343"
-          ],
-          "timestamp": "2026-03-22T12:00:00Z"
-        },
-        {
-          "claim": "Black individuals are less likely to experience severe mental illness than other ethnic groups.",
-          "verdict": "FALSE",
-          "harmLevel": "HIGH",
-          "category": "Stigma reinforcement",
-          "evidence": "Research indicates that severe mental illness, such as psychosis, disproportionately affects Black young people, who are more likely to experience a first episode of psychosis compared to their White counterparts (PMID: 41857862). This misinformation can lead to underestimating the mental health needs of these communities.",
-          "betterUnderstanding": "Severe mental illness affects individuals across all ethnicities, but certain groups, including Black young people, may face higher risks and barriers to care.",
-          "sources": [
-            "https://pubmed.ncbi.nlm.nih.gov/41857862"
-          ],
-          "timestamp": "2026-03-22T12:00:00Z"
-        },
-        {
-          "claim": "Seeking help for mental health issues is a sign of weakness.",
-          "verdict": "FALSE",
-          "harmLevel": "HIGH",
-          "category": "Stigma reinforcement",
-          "evidence": "The qualitative study on help-seeking among Chinese university students reveals that social support and psychological resilience are crucial factors in encouraging help-seeking behaviors, countering the stigma associated with mental health (PMID: 41851955).",
-          "betterUnderstanding": "Seeking help is a proactive step towards mental well-being and is often associated with strength and resilience, not weakness.",
-          "sources": [
-            "https://pubmed.ncbi.nlm.nih.gov/41851955"
-          ],
-          "timestamp": "2026-03-22T12:00:00Z"
-        },
-        {
-          "claim": "Mental health literacy is not important for immigrant populations.",
-          "verdict": "FALSE",
-          "harmLevel": "HIGH",
-          "category": "Stigma reinforcement",
-          "evidence": "The study on health literacy among Vietnamese migrants in Japan emphasizes the critical role of mental health literacy in accessing healthcare and overcoming barriers faced by immigrant populations (PMID: 41860877).",
-          "betterUnderstanding": "Mental health literacy is essential for all populations, including immigrants, as it helps individuals understand their mental health needs and seek appropriate care.",
-          "sources": [
-            "https://pubmed.ncbi.nlm.nih.gov/41860877"
-          ],
-          "timestamp": "2026-03-22T12:00:00Z"
-        },
-        {
-          "claim": "COVID-19 vaccines can cause mental health disorders.",
-          "verdict": "FALSE",
-          "harmLevel": "HIGH",
-          "category": "Pseudoscience",
-          "evidence": "The research on mRNA COVID-19 vaccines demonstrates their efficacy in preventing severe disease and does not support claims linking vaccines to mental health disorders (PMID: 41850696). Misinformation like this can deter individuals from getting vaccinated and seeking mental health support.",
-          "betterUnderstanding": "COVID-19 vaccines are safe and effective, and there is no evidence to support claims that they cause mental health disorders.",
-          "sources": [
-            "https://pubmed.ncbi.nlm.nih.gov/41850696"
-          ],
-          "timestamp": "2026-03-22T12:00:00Z"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-06-14T13:23:33.307Z"
+  "lastUpdated": "2026-06-21T13:43:32.914Z"
 }
