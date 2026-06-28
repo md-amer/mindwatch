@@ -1,6 +1,71 @@
 {
   "weeks": [
     {
+      "week": "2026-06-21 — 2026-06-28",
+      "alerts": [
+        {
+          "claim": "Mental health issues are just a result of personal weakness and can be overcome with willpower alone.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Stigma reinforcement",
+          "evidence": "The study on interpersonal and digital communication's impact on depressive symptoms among cancer survivors (PMID: 42341630) highlights that mental health issues are complex and influenced by various factors, including communication and support systems, rather than solely personal willpower.",
+          "betterUnderstanding": "Mental health conditions often arise from a combination of biological, psychological, and social factors, and overcoming them typically requires professional support and intervention.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42341630/"
+          ],
+          "timestamp": "2026-06-28T12:00:00Z"
+        },
+        {
+          "claim": "Using telehealth for mental health treatment is ineffective compared to in-person therapy.",
+          "verdict": "MISLEADING",
+          "harmLevel": "MODERATE",
+          "category": "Therapy misconceptions",
+          "evidence": "The scoping review on barriers and facilitators to implementing tele-mental health solutions (PMID: 42348491) indicates that while there are challenges, tele-mental health can provide critical access to care, especially in underserved populations.",
+          "betterUnderstanding": "Telehealth can be an effective alternative to in-person therapy, particularly for those who face barriers to accessing traditional mental health services.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42348491/"
+          ],
+          "timestamp": "2026-06-28T12:00:00Z"
+        },
+        {
+          "claim": "Social media influencers provide reliable mental health advice.",
+          "verdict": "PARTIALLY TRUE",
+          "harmLevel": "MODERATE",
+          "category": "Pop psychology",
+          "evidence": "The scoping review on social media influencers and mental health messaging (PMID: 42324953) notes that while influencers can raise awareness, their narratives often lack comprehensive information and may not align with clinical guidelines.",
+          "betterUnderstanding": "While some influencers can positively impact mental health awareness, it is crucial to seek advice from qualified mental health professionals for accurate and safe guidance.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42324953/"
+          ],
+          "timestamp": "2026-06-28T12:00:00Z"
+        },
+        {
+          "claim": "People with severe mental illness cannot manage their weight effectively.",
+          "verdict": "FALSE",
+          "harmLevel": "LOW",
+          "category": "Stigma reinforcement",
+          "evidence": "The qualitative evidence synthesis on weight management for people living with severe mental illness (PMID: 42359773) suggests that individuals can successfully engage in weight management with appropriate support and resources.",
+          "betterUnderstanding": "With the right interventions and support, individuals with severe mental illness can effectively manage their weight and overall health.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42359773/"
+          ],
+          "timestamp": "2026-06-28T12:00:00Z"
+        },
+        {
+          "claim": "Mental health treatment is only necessary for those with severe symptoms.",
+          "verdict": "MISLEADING",
+          "harmLevel": "HIGH",
+          "category": "Medication myths",
+          "evidence": "The study on dropout from a Medication for Opioid Use Disorder clinical trial (PMID: 42363747) highlights that many individuals may struggle with mental health issues at varying levels of severity and that early intervention can prevent worsening conditions.",
+          "betterUnderstanding": "Seeking mental health treatment early, even for mild symptoms, can lead to better outcomes and prevent more severe issues from developing.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42363747/"
+          ],
+          "timestamp": "2026-06-28T12:00:00Z"
+        }
+      ]
+    },
+    {
       "week": "2026-06-14 — 2026-06-21",
       "alerts": [
         {
@@ -714,72 +779,7 @@
           "timestamp": "2026-04-05T12:00:00Z"
         }
       ]
-    },
-    {
-      "week": "2026-03-22 — 2026-03-29",
-      "alerts": [
-        {
-          "claim": "ADHD can be self-diagnosed through social media content.",
-          "verdict": "MISLEADING",
-          "harmLevel": "HIGH",
-          "category": "Self-diagnosis",
-          "evidence": "A study evaluating ADHD content on TikTok and Bilibili found that while there is a surge in ADHD-related content, much of it lacks scientific quality and can lead to misdiagnosis. This trend of self-diagnosis can prevent individuals from seeking proper professional evaluation and treatment (PMID: 41889432).",
-          "betterUnderstanding": "ADHD is a complex neurodevelopmental disorder that requires a professional diagnosis. Relying on social media for self-diagnosis can lead to misunderstandings and inadequate treatment.",
-          "sources": [
-            "https://pubmed.ncbi.nlm.nih.gov/41889432"
-          ],
-          "timestamp": "2026-03-29T12:00:00Z"
-        },
-        {
-          "claim": "Chloroquine is an effective treatment for COVID-19.",
-          "verdict": "FALSE",
-          "harmLevel": "HIGH",
-          "category": "Pseudoscience",
-          "evidence": "Research from the EPICOVID-19 study highlighted that misinformation about chloroquine's protective effects against COVID-19 was widespread, particularly among certain social groups. This belief could lead to harmful behaviors and avoidance of effective treatments (PMID: 41871153).",
-          "betterUnderstanding": "Chloroquine has not been proven to be an effective treatment for COVID-19, and believing otherwise can lead to dangerous health decisions.",
-          "sources": [
-            "https://pubmed.ncbi.nlm.nih.gov/41871153"
-          ],
-          "timestamp": "2026-03-29T12:00:00Z"
-        },
-        {
-          "claim": "Mental health issues in autistic individuals are solely due to their autism.",
-          "verdict": "PARTIALLY TRUE",
-          "harmLevel": "MODERATE",
-          "category": "Stigma reinforcement",
-          "evidence": "A study on school participation among autistic youth revealed that mental health challenges often arise from external barriers and not just the autism diagnosis itself (PMID: 41891296). This suggests that attributing mental health issues solely to autism can overlook important contextual factors.",
-          "betterUnderstanding": "While autistic individuals may face unique challenges, mental health issues can also stem from societal barriers and experiences of discrimination.",
-          "sources": [
-            "https://pubmed.ncbi.nlm.nih.gov/41891296"
-          ],
-          "timestamp": "2026-03-29T12:00:00Z"
-        },
-        {
-          "claim": "Digital addiction is not a real mental health issue.",
-          "verdict": "FALSE",
-          "harmLevel": "MODERATE",
-          "category": "Pop psychology",
-          "evidence": "A comparative study found that digital addiction is associated with various mental health-related variables among young people, indicating that it is a legitimate concern that can impact mental well-being (PMID: 41875631).",
-          "betterUnderstanding": "Digital addiction can significantly affect mental health, and recognizing it as a real issue is important for addressing its effects.",
-          "sources": [
-            "https://pubmed.ncbi.nlm.nih.gov/41875631"
-          ],
-          "timestamp": "2026-03-29T12:00:00Z"
-        },
-        {
-          "claim": "Vaccination myths have no impact on people's willingness to get vaccinated.",
-          "verdict": "MISLEADING",
-          "harmLevel": "HIGH",
-          "category": "Medication myths",
-          "evidence": "Research evaluating vaccine myths and COVID-19 vaccination readiness found that these myths can significantly influence people's decisions about vaccination, indicating that misinformation can hinder public health efforts (PMID: 41866226).",
-          "betterUnderstanding": "Myths about vaccines can create hesitancy and affect vaccination rates, making it crucial to address these misconceptions to improve public health.",
-          "sources": [
-            "https://pubmed.ncbi.nlm.nih.gov/41866226"
-          ],
-          "timestamp": "2026-03-29T12:00:00Z"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-06-21T13:43:32.914Z"
+  "lastUpdated": "2026-06-28T13:09:29.858Z"
 }
