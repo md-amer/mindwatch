@@ -1,6 +1,71 @@
 {
   "weeks": [
     {
+      "week": "2026-07-12 — 2026-07-19",
+      "alerts": [
+        {
+          "claim": "ADHD is just an excuse for laziness and poor behavior.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Stigma reinforcement",
+          "evidence": "The study titled 'Lazy, Strange, Disorganized, and Diagnosed'? Mental Representations of ADHD in People With and Without a Diagnosis (PMID: 42464464) highlights the stigma and oversimplification surrounding ADHD, showing that it is often misunderstood and misrepresented in society.",
+          "betterUnderstanding": "ADHD is a legitimate neurodevelopmental disorder that affects attention and impulse control, and it requires appropriate diagnosis and treatment.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42464464"
+          ],
+          "timestamp": "2026-07-19T12:00:00Z"
+        },
+        {
+          "claim": "People with mental illness are dangerous and should be avoided.",
+          "verdict": "FALSE",
+          "harmLevel": "HIGH",
+          "category": "Stigma reinforcement",
+          "evidence": "Research in 'Podcast Creation and Nursing Students' Attitudes Toward People With Mental Illness (PMID: 42467748)' shows that stigma surrounding mental illness can lead to negative attitudes and discrimination, which can prevent individuals from seeking help.",
+          "betterUnderstanding": "Most individuals with mental illness are not violent and can lead fulfilling lives with appropriate support and treatment.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42467748"
+          ],
+          "timestamp": "2026-07-19T12:00:00Z"
+        },
+        {
+          "claim": "Excessive screen time is the only issue for adolescents with ADHD.",
+          "verdict": "MISLEADING",
+          "harmLevel": "MODERATE",
+          "category": "Pop psychology",
+          "evidence": "The study 'Problematic digital use in adolescents with ADHD: impulsivity, obsessive-compulsive symptoms, and perceived cognitive flexibility (PMID: 42449456)' indicates that problematic digital use is characterized by loss of control and functional impairment, not just the amount of screen time.",
+          "betterUnderstanding": "Adolescents with ADHD may struggle with impulsivity and compulsive behaviors that can contribute to problematic digital use, which requires a comprehensive approach to treatment.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42449456"
+          ],
+          "timestamp": "2026-07-19T12:00:00Z"
+        },
+        {
+          "claim": "Mental health issues are just a phase and will go away on their own.",
+          "verdict": "PARTIALLY TRUE",
+          "harmLevel": "MODERATE",
+          "category": "Therapy misconceptions",
+          "evidence": "The findings in 'Using nominal group technique to select an HIV status disclosure decision aid for adaptation in Georgia (PMID: 42461942)' suggest that mental health issues often require active intervention and support rather than being left untreated.",
+          "betterUnderstanding": "While some mental health issues may improve over time, many require professional help to ensure proper management and recovery.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42461942"
+          ],
+          "timestamp": "2026-07-19T12:00:00Z"
+        },
+        {
+          "claim": "People with mental health issues should just think positively to get better.",
+          "verdict": "MISLEADING",
+          "harmLevel": "LOW",
+          "category": "Toxic positivity",
+          "evidence": "The study 'From social media to body image distress: Problematic internet use, exercise addiction, and enhancement drugs use across countries (PMID: 42284098)' illustrates how oversimplified solutions like positive thinking can overlook the complex realities of mental health challenges.",
+          "betterUnderstanding": "While positive thinking can be beneficial, it is not a substitute for professional treatment and support for mental health issues.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42284098"
+          ],
+          "timestamp": "2026-07-19T12:00:00Z"
+        }
+      ]
+    },
+    {
       "week": "2026-07-05 — 2026-07-12",
       "alerts": [
         {
@@ -714,72 +779,7 @@
           "timestamp": "2026-05-03T12:00:00Z"
         }
       ]
-    },
-    {
-      "week": "2026-04-12 — 2026-04-19",
-      "alerts": [
-        {
-          "claim": "Mental health issues are just a phase and will go away on their own.",
-          "verdict": "MISLEADING",
-          "harmLevel": "HIGH",
-          "category": "Stigma reinforcement",
-          "evidence": "The study on portrayals of depression on TikTok highlights that while visibility can raise awareness, it often lacks diagnostic accuracy, leading to misconceptions about the nature of mental health issues (PMID: 41973877). This can contribute to the belief that mental health problems are temporary and do not require professional help.",
-          "betterUnderstanding": "Mental health issues can be complex and often require intervention. Seeking help early can lead to better outcomes.",
-          "sources": [
-            "https://pubmed.ncbi.nlm.nih.gov/41973877"
-          ],
-          "timestamp": "2026-04-19T12:00:00Z"
-        },
-        {
-          "claim": "All mental health information on social media is accurate and trustworthy.",
-          "verdict": "FALSE",
-          "harmLevel": "HIGH",
-          "category": "Pop psychology",
-          "evidence": "The content analysis of depression portrayals on TikTok reveals significant concerns about the diagnostic accuracy of mental health content shared on social media platforms (PMID: 41973877). This indicates that not all information is reliable and can mislead users.",
-          "betterUnderstanding": "It's crucial to verify mental health information with credible sources and professionals rather than relying solely on social media.",
-          "sources": [
-            "https://pubmed.ncbi.nlm.nih.gov/41973877"
-          ],
-          "timestamp": "2026-04-19T12:00:00Z"
-        },
-        {
-          "claim": "You can self-diagnose mental health conditions based on social media content.",
-          "verdict": "FALSE",
-          "harmLevel": "HIGH",
-          "category": "Self-diagnosis",
-          "evidence": "The study comparing images of depression in mass media and AI-generated pictures indicates that representations of mental health conditions can be distorted, leading to misinterpretations of symptoms (PMID: 41980240). This can encourage individuals to incorrectly self-diagnose.",
-          "betterUnderstanding": "Accurate diagnosis of mental health conditions should be conducted by qualified professionals who can consider the full context of an individual's experiences.",
-          "sources": [
-            "https://pubmed.ncbi.nlm.nih.gov/41980240"
-          ],
-          "timestamp": "2026-04-19T12:00:00Z"
-        },
-        {
-          "claim": "Exercise alone can cure mental health disorders.",
-          "verdict": "PARTIALLY TRUE",
-          "harmLevel": "MODERATE",
-          "category": "Medication myths",
-          "evidence": "While the ISOFITTER study discusses the benefits of isometric exercise for hypertension, it does not imply that exercise alone is a cure for mental health disorders, which often require a multifaceted treatment approach (PMID: 41647769).",
-          "betterUnderstanding": "Exercise can be a helpful component of a comprehensive treatment plan for mental health, but it should not replace professional therapy or medication when needed.",
-          "sources": [
-            "https://pubmed.ncbi.nlm.nih.gov/41647769"
-          ],
-          "timestamp": "2026-04-19T12:00:00Z"
-        },
-        {
-          "claim": "Mental health problems are more prevalent in urban areas than rural areas.",
-          "verdict": "LACKS CONTEXT",
-          "harmLevel": "LOW",
-          "category": "Stigma reinforcement",
-          "evidence": "The study on community understanding of COVID-19 and mental health in Haiti, Malawi, and Rwanda highlights that mental health perceptions can vary significantly across different contexts and communities (PMID: 41988959). Thus, generalizing prevalence based on location can be misleading.",
-          "betterUnderstanding": "Mental health issues can affect individuals in both urban and rural settings, and prevalence may depend on various factors, including access to care and cultural perceptions.",
-          "sources": [
-            "https://pubmed.ncbi.nlm.nih.gov/41988959"
-          ],
-          "timestamp": "2026-04-19T12:00:00Z"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-07-12T12:49:55.376Z"
+  "lastUpdated": "2026-07-19T12:46:13.729Z"
 }
